@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns="https://www.w3.org/1999/xhtml"
+>
+<head>
+    <meta charset="utf-8"/>
+    <title>tsstest</title>
+</head>
+<!-- BEGIN BODY -->
+
+<body class="childBody">
+
+<!-- BEGIN CONTAINER -->
+<p>
+<h1>老师登陆</h1>
+<form id="teacher_login" action="http://localhost/teacher/login" method="get">
+    teacherId: <input type="text" name="teacherId">
+    teacherPwd: <input type="text" name="teacherPwd">
+    <input type="submit" value="提交">
+</form>
+<h1>老师密码修改</h1>
+<form id="teacher_updatepwd" action="http://localhost/teacher/update/pwd" method="get">
+    teacherId: <input type="text" name="teacherId">
+    teacherPwd: <input type="text" name="teacherPwd">
+    <input type="submit" value="提交">
+</form>
+<h1>学生登陆</h1>
+<form id="student_login" action="http://localhost/student/login" method="get">
+    studentId: <input type="text" name="studentId">
+    studentPwd: <input type="text" name="studentPwd">
+    <input type="submit" value="提交">
+</form>
+<h1>学生密码修改</h1>
+<form id="student_updatepwd" action="http://localhost/student/update/pwd" method="get">
+    studentId: <input type="text" name="studentId">
+    studentPwd: <input type="text" name="studentPwd">
+    <input type="submit" value="提交">
+</form>
+<h1>按班级获取学生账户列表</h1>
+<form id="student_getlistbyclassid" action="http://localhost/student/get/list" method="get">
+    classId: <input type="text" name="classId">
+    <input type="submit" value="提交">
+</form>
+<h1>学生选中题目</h1>
+<form id="student_selecttopic" action="http://localhost/topic/select/topic" method="get">
+    studentId: <input type="text" name="studentId">
+    topicId: <input type="text" name="topicId">
+    <input type="submit" value="提交">
+</form>
+<h1>学生丢弃题目</h1>
+<form id="student_droptopic" action="http://localhost/topic/drop/topic" method="get">
+    studentId: <input type="text" name="studentId">
+    topicId: <input type="text" name="topicId">
+    <input type="submit" value="提交">
+</form>
+<h1>老师删除题目</h1>
+<form id="teacher_deletetopic" action="http://localhost/topic/delete/topic" method="get">
+    topicId: <input type="text" name="topicId">
+    <input type="submit" value="提交">
+</form>
+<h1>老师更新题目</h1>
+<form id="teacher_updatetopic" action="http://localhost/topic/update/topic" method="get">
+    topicId: <input type="text" name="topicId">
+    data: <input type="text" name="data">
+    type: <input type="text" name="type">
+    <input type="submit" value="提交">
+</form>
+说明type： 0-题目名称; 1-题目描述; 2-题目人数上限 -1-三项一起修改
+<form id="teacher_updatetopics" action="http://localhost/topic/update/topic" method="get">
+    topicId: <input type="text" name="topicId">
+    topicName: <input type="text" name="topicName">
+    topicDescrip: <input type="text" name="topicDescrip">
+    topicMaxSelect: <input type="text" name="topicMaxSelect">
+    type: <input type="text" name="type">
+    <input type="submit" value="提交">
+</form>
+<h1>获取题目列表</h1>
+<form id="get_topiclist" action="http://localhost/topic/get/list" method="get">
+    <input type="submit" value="提交">
+</form>
+<h1>导入学生数据</h1>
+<form id="student_file_form" action="http://localhost/excel/import/students"
+      enctype="multipart/form-data" method="post">
+    <input type="file" name="file" id="student_file_input">
+    <input type="submit" value="导入数据" class="file">
+</form>
+<h1>导入老师数据</h1>
+<form id="teacher_file_form" action="http://localhost/excel/import/teachers"
+      enctype="multipart/form-data" method="post">
+    <input type="file" name="file" id="teacher_file_input">
+    <input type="submit" value="导入数据" class="file">
+</form>
+<h1>导入题目数据</h1>
+<form id="topic_file_form" action="http://localhost/excel/import/topics"
+      enctype="multipart/form-data" method="post">
+    <input type="file" name="file" id="topic_file_input">
+    <input type="submit" value="导入数据" class="file">
+</form>
+<h1>导出班级选题数据</h1>
+<form action="http://localhost/excel/export/students" method="get">
+    classId: <input type="text" name="classId">
+    <input type="submit" value="提交">
+</form>
+<h1>按题目类型统计选选题人数</h1>
+<form action="http://localhost/statistics/get/type" method="get">
+    topicType: <input type="text" name="topicType">
+    <input type="submit" value="提交">
+</form>
+<h1>按题目统计选题人数</h1>
+<form action="http://localhost/statistics/get/topic" method="get">
+    topicId: <input type="text" name="topicId">
+    <input type="submit" value="提交">
+</form>
+<h1>按班级统计选题人数</h1>
+<form action="http://localhost/statistics/get/class" method="get">
+    classId: <input type="text" name="classId">
+    <input type="submit" value="提交">
+</form>
+<h1>全局统计选题人数</h1>
+<form action="http://localhost/statistics/get/final" method="get">
+    <input type="submit" value="提交">
+</form>
+
+</p>
+</body>
+<!-- END BODY -->
+</html>
