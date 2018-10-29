@@ -73,13 +73,28 @@ public interface TopicRepo extends JpaRepository<Topic, Integer> {
     String getMAXTopic(@Param("topicId") String topicId);
 
     /**
-     * 查询真实值
+     * 查询1班真实值
      *
      * @param topicId
      */
-    @Query("select t.topicRealSelected  from Topic  t  where t.topicId= :topicId")
-    String getRealTopic(@Param("topicId") String topicId);
+    @Query("select t.topicRealSelected1  from Topic  t  where t.topicId= :topicId")
+    String getRealTopic1(@Param("topicId") String topicId);
 
+    /**
+     * 查询2班真实值
+     *
+     * @param topicId
+     */
+    @Query("select t.topicRealSelected2  from Topic  t  where t.topicId= :topicId")
+    String getRealTopic2(@Param("topicId") String topicId);
+
+    /**
+     * 查询3班真实值
+     *
+     * @param topicId
+     */
+    @Query("select t.topicRealSelected3  from Topic  t  where t.topicId= :topicId")
+    String getRealTopic3(@Param("topicId") String topicId);
 
     /**
      * 更新topicName
@@ -130,6 +145,15 @@ public interface TopicRepo extends JpaRepository<Topic, Integer> {
      */
     @Query("select t from Topic t where t.topicType = :topicType")
     List<Topic> conuttopicType(@Param("topicType") String topicType);
+
+    /**
+     * 根据topicType查询TopicId
+     *
+     * @param topicId
+     * @return
+     */
+    @Query("select  t.topicType from Topic t where t.topicId = :topicId")
+    String findtopicType(@Param("topicId") String topicId);
 
     /**
      * 根据TopicId查询

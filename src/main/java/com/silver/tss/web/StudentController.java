@@ -2,14 +2,12 @@ package com.silver.tss.web;
 
 import com.alibaba.fastjson.JSONObject;
 import com.silver.tss.common.Response;
-import com.silver.tss.domain.Student;
-import com.silver.tss.domain.User;
-import com.silver.tss.service.StudentService;
 import com.silver.tss.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 /**
  * 学生账户管理接口
@@ -20,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/student")
 public class StudentController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(StudentController.class);
     @Autowired
     private UserService userService;
 
@@ -36,6 +35,7 @@ public class StudentController {
     @ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public JSONObject login(@RequestParam(value = "studentId") String studentId, @RequestParam(value = "studentPwd") String studentPwd) {
+        LOGGER.info("studentId={} with studentPwd={} login tss", studentId, studentPwd);
         JSONObject response = userService.isUserExist(studentId, studentPwd);
         return "200".equals(response.getString("code")) ?
                 userService.isUserChangePwd(studentId) ? response : Response.response(300)
@@ -55,6 +55,7 @@ public class StudentController {
     @ResponseBody
     @RequestMapping(value = "/update/pwd", method = RequestMethod.GET)
     public JSONObject updatePwd(@RequestParam(value = "studentId") String studentId, @RequestParam(value = "studentPwd") String studentPwd) {
+        LOGGER.info("studentId={} is trying to change tss pwd={}", studentId, studentPwd);
         return userService.updateStudentPwd(studentId, studentPwd);
     }
 
@@ -84,6 +85,7 @@ public class StudentController {
     @ResponseBody
     @RequestMapping(value = "/get/list", method = RequestMethod.GET)
     public JSONObject getStudentsList(@RequestParam(value = "classId") String classId) {
+        LOGGER.info("query student info list with classId={}", classId);
         return userService.findStudentByClassId(classId);
     }
 

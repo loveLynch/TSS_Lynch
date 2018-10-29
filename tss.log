@@ -1,0 +1,868 @@
+2018/10/29-13:37 [main] INFO  com.silver.tss.TssApplication- Starting TssApplication on LynchdeMacBook-Pro.local with PID 50319 (/Users/lynch/Documents/Idea/TSS-master/target/classes started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:37 [main] INFO  com.silver.tss.TssApplication- No active profile set, falling back to default profiles: default
+2018/10/29-13:37 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 13:37:15 CST 2018]; root of context hierarchy
+2018/10/29-13:37 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87f8d6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-13:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 80 (http)
+2018/10/29-13:37 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/10/29-13:37 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lynch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2022 ms
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/10/29-13:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/10/29-13:37 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:37 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-13:37 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-13:37 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-13:37 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-13:37 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-13:37 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-13:37 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-13:37 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:37 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 13:37:15 CST 2018]; root of context hierarchy
+2018/10/29-13:37 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/10/29-13:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/10/29-13:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018/10/29-13:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 80 (http) with context path ''
+2018/10/29-13:37 [main] INFO  com.silver.tss.TssApplication- Started TssApplication in 6.097 seconds (JVM running for 7.158)
+2018/10/29-13:38 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50324 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:38 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-13:38 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 13:38:11 CST 2018]; root of context hierarchy
+2018/10/29-13:38 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e50eddc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-13:38 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:38 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-13:38 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-13:38 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-13:38 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-13:38 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-13:38 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-13:38 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-13:38 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:38 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 13:38:11 CST 2018]; root of context hierarchy
+2018/10/29-13:38 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:38 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:38 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 7.059 seconds (JVM running for 8.547)
+2018/10/29-13:38 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 13:38:11 CST 2018]; root of context hierarchy
+2018/10/29-13:38 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:38 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-13:38 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-13:38 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50343 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:38 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-13:38 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:38:47 CST 2018]; root of context hierarchy
+2018/10/29-13:38 [Thread-16] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 13:37:15 CST 2018]; root of context hierarchy
+2018/10/29-13:38 [Thread-16] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+2018/10/29-13:38 [Thread-16] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+2018/10/29-13:38 [Thread-16] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:38 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-13:38 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-13:39 [main] INFO  com.silver.tss.TssApplication- Starting TssApplication on LynchdeMacBook-Pro.local with PID 50352 (/Users/lynch/Documents/Idea/TSS-master/target/classes started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:39 [main] INFO  com.silver.tss.TssApplication- No active profile set, falling back to default profiles: default
+2018/10/29-13:39 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e056f20: startup date [Mon Oct 29 13:39:01 CST 2018]; root of context hierarchy
+2018/10/29-13:39 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50357 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:39 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-13:39 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Mon Oct 29 13:39:12 CST 2018]; root of context hierarchy
+2018/10/29-13:39 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$851ba68a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-13:39 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:39 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-13:39 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-13:39 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-13:39 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-13:39 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-13:39 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-13:39 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-13:39 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:39 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Mon Oct 29 13:39:12 CST 2018]; root of context hierarchy
+2018/10/29-13:39 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:39 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:39 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 4.913 seconds (JVM running for 5.902)
+2018/10/29-13:39 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Mon Oct 29 13:39:12 CST 2018]; root of context hierarchy
+2018/10/29-13:39 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:39 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-13:39 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-13:43 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50388 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:43 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-13:43 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:43:29 CST 2018]; root of context hierarchy
+2018/10/29-13:43 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc2e4596] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-13:43 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:43 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-13:43 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-13:43 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-13:43 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-13:43 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-13:43 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-13:43 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-13:43 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:43 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:43:29 CST 2018]; root of context hierarchy
+2018/10/29-13:43 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:43 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 6.703 seconds (JVM running for 7.663)
+2018/10/29-13:43 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:43:29 CST 2018]; root of context hierarchy
+2018/10/29-13:43 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:43 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-13:43 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-13:53 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50424 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-13:53 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-13:53 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:53:23 CST 2018]; root of context hierarchy
+2018/10/29-13:53 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d61747a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-13:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:53 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-13:53 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-13:53 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-13:53 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-13:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-13:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-13:53 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-13:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:53 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:53:23 CST 2018]; root of context hierarchy
+2018/10/29-13:53 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-13:53 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 7.105 seconds (JVM running for 8.21)
+2018/10/29-13:53 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 13:53:23 CST 2018]; root of context hierarchy
+2018/10/29-13:53 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-13:53 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-13:53 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-14:07 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 50478 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-14:07 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-14:07 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 14:07:57 CST 2018]; root of context hierarchy
+2018/10/29-14:07 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d61747a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-14:07 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-14:07 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-14:07 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-14:07 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-14:07 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-14:07 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-14:07 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-14:07 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-14:08 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-14:08 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 14:07:57 CST 2018]; root of context hierarchy
+2018/10/29-14:08 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-14:08 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-14:08 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 5.315 seconds (JVM running for 6.34)
+2018/10/29-14:08 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 14:07:57 CST 2018]; root of context hierarchy
+2018/10/29-14:08 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-14:08 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-14:08 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- Starting TssApplication on LynchdeMacBook-Pro.local with PID 50660 (/Users/lynch/Documents/Idea/TSS-master/target/classes started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- No active profile set, falling back to default profiles: default
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 16:53:21 CST 2018]; root of context hierarchy
+2018/10/29-16:53 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8cb4882] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2018/10/29-16:53 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/10/29-16:53 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lynch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2054 ms
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/10/29-16:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-16:53 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-16:53 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-16:53 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-16:53 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-16:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-16:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-16:53 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-16:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-16:53 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 16:53:21 CST 2018]; root of context hierarchy
+2018/10/29-16:53 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- Started TssApplication in 5.806 seconds (JVM running for 6.782)
+2018/10/29-16:53 [Thread-15] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e4784bc: startup date [Mon Oct 29 16:53:21 CST 2018]; root of context hierarchy
+2018/10/29-16:53 [Thread-15] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+2018/10/29-16:53 [Thread-15] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+2018/10/29-16:53 [Thread-15] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-16:53 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-16:53 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- Starting TssApplication on LynchdeMacBook-Pro.local with PID 50665 (/Users/lynch/Documents/Idea/TSS-master/target/classes started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- No active profile set, falling back to default profiles: default
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Oct 29 16:53:43 CST 2018]; root of context hierarchy
+2018/10/29-16:53 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1c82de5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 80 (http)
+2018/10/29-16:53 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/10/29-16:53 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lynch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2644 ms
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/10/29-16:53 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/10/29-16:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-16:53 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-16:53 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-16:53 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-16:53 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-16:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-16:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-16:53 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-16:53 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-16:53 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Oct 29 16:53:43 CST 2018]; root of context hierarchy
+2018/10/29-16:53 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/10/29-16:53 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018/10/29-16:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 80 (http) with context path ''
+2018/10/29-16:53 [main] INFO  com.silver.tss.TssApplication- Started TssApplication in 6.155 seconds (JVM running for 7.024)
+2018/10/29-16:53 [http-nio-0.0.0.0-80-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018/10/29-16:53 [http-nio-0.0.0.0-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2018/10/29-16:53 [http-nio-0.0.0.0-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018/10/29-16:54 [http-nio-0.0.0.0-80-exec-3] INFO  com.silver.tss.web.TopicController- studentId=2015010903010 select topicId=1 failed, cause = 401
+2018/10/29-16:56 [http-nio-0.0.0.0-80-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.silver.tss.service.TopicService.isExceedMaxTopic(TopicService.java:143)
+	at com.silver.tss.web.TopicController.selectTopic(TopicController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018/10/29-16:57 [http-nio-0.0.0.0-80-exec-6] INFO  com.silver.tss.web.StudentController- studentId= 2015010903010 with studentPwd=666666 login tss
+2018/10/29-16:58 [http-nio-0.0.0.0-80-exec-8] INFO  com.silver.tss.web.StudentController- studentId= 2015010903010 with studentPwd=666666 login tss
+2018/10/29-16:59 [http-nio-0.0.0.0-80-exec-9] INFO  com.silver.tss.web.StudentController- studentId= 2015010903010 with studentPwd=123456 login tss
+2018/10/29-17:00 [http-nio-0.0.0.0-80-exec-10] INFO  com.silver.tss.web.StudentController- studentId=2015010903025 with studentPwd=666666 login tss
+2018/10/29-17:00 [http-nio-0.0.0.0-80-exec-1] INFO  com.silver.tss.web.StudentController- studentId=2015010903025 is trying to change tss pwd=123456
+2018/10/29-17:00 [http-nio-0.0.0.0-80-exec-2] INFO  com.silver.tss.web.TopicController- studentId=2015010903025 select topicId=1 failed, cause = 401
+2018/10/29-17:02 [http-nio-0.0.0.0-80-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.silver.tss.service.TeacherService.isTeacherIsAuthority(TeacherService.java:84)
+	at com.silver.tss.web.ExcelController.importStudents(ExcelController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018/10/29-17:02 [http-nio-0.0.0.0-80-exec-5] INFO  com.silver.tss.web.TeacherController- teacherId=1000 is trying to change tss pwd=123456
+2018/10/29-17:02 [http-nio-0.0.0.0-80-exec-6] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.silver.tss.service.TeacherService.isTeacherIsAuthority(TeacherService.java:84)
+	at com.silver.tss.web.ExcelController.importStudents(ExcelController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018/10/29-17:03 [http-nio-0.0.0.0-80-exec-7] INFO  com.silver.tss.web.TeacherController- teacherId=1000 is trying to change tss pwd=123456
+2018/10/29-17:03 [http-nio-0.0.0.0-80-exec-8] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.silver.tss.service.TeacherService.isTeacherIsAuthority(TeacherService.java:84)
+	at com.silver.tss.web.ExcelController.importStudents(ExcelController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018/10/29-17:22 [Thread-15] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Oct 29 16:53:43 CST 2018]; root of context hierarchy
+2018/10/29-17:22 [Thread-15] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+2018/10/29-17:22 [Thread-15] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+2018/10/29-17:22 [Thread-15] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-17:22 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-17:22 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-18:56 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 52377 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-18:56 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-18:56 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 18:56:42 CST 2018]; root of context hierarchy
+2018/10/29-18:56 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$997d1c14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-18:56 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-18:56 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-18:56 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-18:56 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-18:56 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-18:56 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-18:56 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-18:56 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-18:56 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-18:56 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 18:56:42 CST 2018]; root of context hierarchy
+2018/10/29-18:56 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-18:56 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-18:56 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 7.99 seconds (JVM running for 9.727)
+2018/10/29-18:56 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@5e7cd6cc: startup date [Mon Oct 29 18:56:42 CST 2018]; root of context hierarchy
+2018/10/29-18:56 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-18:56 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-18:56 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-19:15 [main] INFO  com.silver.tss.TssApplication- Starting TssApplication on LynchdeMacBook-Pro.local with PID 52482 (/Users/lynch/Documents/Idea/TSS-master/target/classes started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-19:15 [main] INFO  com.silver.tss.TssApplication- No active profile set, falling back to default profiles: default
+2018/10/29-19:15 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e056f20: startup date [Mon Oct 29 19:15:00 CST 2018]; root of context hierarchy
+2018/10/29-19:15 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8cb4882] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-19:15 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2018/10/29-19:15 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/10/29-19:15 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lynch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1804 ms
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/10/29-19:15 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/10/29-19:15 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:15 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-19:15 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-19:15 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-19:15 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-19:15 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-19:15 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-19:15 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-19:15 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:15 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e056f20: startup date [Mon Oct 29 19:15:00 CST 2018]; root of context hierarchy
+2018/10/29-19:15 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:15 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:15 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/10/29-19:15 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/10/29-19:15 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018/10/29-19:15 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2018/10/29-19:15 [main] INFO  com.silver.tss.TssApplication- Started TssApplication in 5.088 seconds (JVM running for 5.832)
+2018/10/29-19:15 [Thread-13] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e056f20: startup date [Mon Oct 29 19:15:00 CST 2018]; root of context hierarchy
+2018/10/29-19:15 [Thread-13] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+2018/10/29-19:15 [Thread-13] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+2018/10/29-19:15 [Thread-13] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:15 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-19:15 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2018/10/29-19:17 [main] INFO  com.silver.tss.TssApplicationTests- Starting TssApplicationTests on LynchdeMacBook-Pro.local with PID 52492 (started by lynch in /Users/lynch/Documents/Idea/TSS-master)
+2018/10/29-19:17 [main] INFO  com.silver.tss.TssApplicationTests- No active profile set, falling back to default profiles: default
+2018/10/29-19:17 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 19:17:08 CST 2018]; root of context hierarchy
+2018/10/29-19:17 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8403d7cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/10/29-19:17 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:17 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/10/29-19:17 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2018/10/29-19:17 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/10/29-19:17 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/10/29-19:17 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2018/10/29-19:17 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2018/10/29-19:17 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/10/29-19:17 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:17 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 19:17:08 CST 2018]; root of context hierarchy
+2018/10/29-19:17 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/students],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importStudents(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/topics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/osstopics],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importOSSTopics(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/import/teachers],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.ExcelController.importTeachers(org.springframework.web.multipart.MultipartFile)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/excel/export/students],methods=[GET]}" onto public void com.silver.tss.web.ExcelController.exportStudents(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/class],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getClassInfo(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/type],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTypeInfo(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getTopicInfo(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/statistics/get/final],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatisticsController.getFinalInfo()
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/status/change/status],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StatusController.changeStatus(int)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.getStudentsList(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.StudentController.login(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/update/pwd],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.updatePwd(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/teacher/login],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TeacherController.login(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/select/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectTopic(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/drop/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.dropTopic(java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/delete/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.deleteTopic(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/topic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopic(java.lang.String,java.lang.String,java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/show/selectedtopic],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.selectedTopic(java.lang.String)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/update/data],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.updateTopicData(com.silver.tss.domain.Topic)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/topic/get/list],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.silver.tss.web.TopicController.getTopicsList()
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:17 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/10/29-19:17 [main] INFO  com.silver.tss.TssApplicationTests- Started TssApplicationTests in 5.379 seconds (JVM running for 6.222)
+2018/10/29-19:17 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@68c9d179: startup date [Mon Oct 29 19:17:08 CST 2018]; root of context hierarchy
+2018/10/29-19:17 [Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2018/10/29-19:17 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2018/10/29-19:17 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.

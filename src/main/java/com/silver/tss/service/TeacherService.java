@@ -74,6 +74,20 @@ public class TeacherService {
     }
 
     /**
+     * 老师权限获取
+     *
+     * @param teacherId
+     * @return
+     */
+    public boolean isTeacherIsAuthority(String teacherId) {
+        String authority = teacherRepo.getTeacherAuthority(teacherId);
+        if (authority.equals("admin"))
+            return true;
+        else
+            return false;
+    }
+
+    /**
      * 老师密码修改
      *
      * @param teacherId

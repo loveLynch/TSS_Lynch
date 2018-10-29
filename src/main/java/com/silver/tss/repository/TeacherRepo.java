@@ -47,6 +47,15 @@ public interface TeacherRepo extends JpaRepository<Teacher, Integer> {
     String getTeacherPwd(@Param("teacherId") String teacherId);
 
     /**
+     * 获取权限
+     *
+     * @param teacherId
+     * @return
+     */
+    @Query("select t.authority  from  Teacher t  where t.teacherId= :teacherId")
+    String getTeacherAuthority(@Param("teacherId") String teacherId);
+
+    /**
      * 更新账户和密码
      *
      * @param teacherId

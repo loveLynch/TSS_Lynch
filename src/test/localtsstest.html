@@ -95,6 +95,12 @@
     <input type="file" name="file" id="topic_file_input">
     <input type="submit" value="导入数据" class="file">
 </form>
+<h1>导入非Excel数据</h1>
+<form id="file_form" action="http://localhost/excel/import/osstopics"
+      enctype="multipart/form-data" method="post">
+    <input type="file" name="file" id="file_input">
+    <input type="submit" value="导入数据" class="file">
+</form>
 <h1>导出班级选题数据</h1>
 <form action="http://localhost/excel/export/students" method="get">
     classId: <input type="text" name="classId">

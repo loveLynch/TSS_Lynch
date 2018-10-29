@@ -1,5 +1,6 @@
 package com.silver.tss.repository;
 
+import com.alibaba.fastjson.JSONObject;
 import com.silver.tss.domain.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -10,4 +11,5 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface StatusRepo extends JpaRepository<Status, Integer> {
+
 }

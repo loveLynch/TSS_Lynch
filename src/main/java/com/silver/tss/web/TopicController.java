@@ -1,17 +1,15 @@
 package com.silver.tss.web;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.silver.tss.common.Response;
 import com.silver.tss.domain.Topic;
+import com.silver.tss.service.StatusService;
 import com.silver.tss.service.StudentService;
 import com.silver.tss.service.TopicService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 课程设计题目管理接口
@@ -26,6 +24,9 @@ public class TopicController {
     private TopicService topicService;
     @Autowired
     private StudentService studentService;
+    @Autowired
+    private StatusService statusService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(TopicController.class);
 
     /**
      * 学生选中题目
@@ -34,19 +35,28 @@ public class TopicController {
      * @param studentId 学生ID
      * @param topicId   题目ID
      * @return {
-     * "code" : 200-成功; 400-失败; 401-学生已选过该题; 402-选题人数超上限
+     * "code" : 200-成功; 400-失败; 401-学生已选过该题; 402-选题人数超上限 -403不在选课时间段
      * }
      */
     @ResponseBody
     @RequestMapping(value = "/select/topic", method = RequestMethod.GET)
     public JSONObject selectTopic(String studentId, String topicId) {
-        if (studentService.isStudentUserHasTopic(studentId))
+        if (statusService.isStatus0() || statusService.isStatus2()) {
+            LOGGER.info("studentId={} select topicId={} failed, cause = 403", studentId, topicId);
+            return Response.response(403);
+        } else if (studentService.isStudentUserHasTopic(studentId)) {
+            LOGGER.info("studentId={} select topicId={} failed, cause = 401", studentId, topicId);
             return Response.response(401);
-        else if (topicService.isExceedMaxTopic(topicId))
-            return Response.response(402);
+        } else {
+            if (topicService.isExceedMaxTopic(studentId, topicId)) {
+                LOGGER.info("studentId={} select topicId={} in classId={} failed, cause code = 402", studentId, topicId);
+                return Response.response(402);
+            } else {
+                LOGGER.info("studentId={} select topicId={} success", studentId, topicId);
+                return topicService.selectTopic(studentId, topicId);
+            }
 
-        else
-            return topicService.selectTopic(studentId, topicId);
+        }
 
     }
 
@@ -57,15 +67,20 @@ public class TopicController {
      * @param studentId 学生ID
      * @param topicId   题目ID
      * @return {
-     * "code" : 200-成功; 400-失败; 401-该学生未选择本题目
+     * "code" : 200-成功; 400-失败; 401-该学生未选择本题目  -402不在选课时间段
      * }
      */
     @ResponseBody
     @RequestMapping(value = "/drop/topic", method = RequestMethod.GET)
     public JSONObject dropTopic(String studentId, String topicId) {
-        if (!studentService.isStudentUserHasTopic(studentId)) {
+        if (statusService.isStatus0() || statusService.isStatus2()) {
+            LOGGER.info("studentId={} drop topicId={} failed, cause = 402", studentId, topicId);
+            return Response.response(402);
+        } else if (!studentService.isStudentUserHasTopic(studentId)) {
+            LOGGER.info("studentId={} drop topicId={} failed, cause code = 401", studentId, topicId);
             return Response.response(401);
         } else {
+            LOGGER.info("studentId={} drop topicId={} success", studentId, topicId);
             return topicService.dropTopic(studentId, topicId);
         }
     }
@@ -80,10 +95,13 @@ public class TopicController {
     @ResponseBody
     @RequestMapping(value = "/show/selectedtopic", method = RequestMethod.GET)
     public JSONObject selectedTopic(String studentId) {
-        if (studentService.isStudentUserHasTopic(studentId))
+        if (studentService.isStudentUserHasTopic(studentId)) {
+            LOGGER.info("show studentId={} selected topic success", studentId);
             return studentService.showSelected(studentId);
-        else
+        } else {
+            LOGGER.info("studentId={} show failed without topic, cause code = 401", studentId);
             return Response.response(401);
+        }
     }
 
 
@@ -110,16 +128,13 @@ public class TopicController {
      * @param data    待更新数据
      * @param type    更新类型, 0-题目名称; 1-题目描述; 2-题目人数上限
      * @return {
-     * "code" : 200-成功; 400-失败; 401-参数错误; 402-题目人数上限小于实际选题人数
+     * "code" : 200-成功; 400-失败
      * }
      */
     @ResponseBody
     @RequestMapping(value = "/update/topic", method = RequestMethod.GET)
     public JSONObject updateTopic(String topicId, String data, String type) {
-        if (topicService.isExceedMaxTopic(topicId))
-            return Response.response(402);
-        else
-            return topicService.updateTopic(topicId, data, Integer.parseInt(type));
+        return topicService.updateTopic(topicId, data, Integer.parseInt(type));
     }
 
     /**
@@ -161,6 +176,7 @@ public class TopicController {
     @ResponseBody
     @RequestMapping(value = "/get/list", method = RequestMethod.GET)
     public JSONObject getTopicsList() {
+        LOGGER.info("query topic info list");
         return topicService.findAllTopic();
 
     }

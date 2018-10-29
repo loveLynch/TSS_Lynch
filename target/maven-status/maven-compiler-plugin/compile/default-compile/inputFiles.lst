@@ -20,7 +20,9 @@
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/domain/Topic.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/service/TeacherService.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/domain/User.java
+/Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/domain/administrator.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/utils/MysqlConfig.java
+/Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/utils/AliyunOSSConfig.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/TssApplication.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/service/StudentService.java
 /Users/lynch/Documents/Idea/TSS-master/src/main/java/com/silver/tss/repository/UserRepo.java

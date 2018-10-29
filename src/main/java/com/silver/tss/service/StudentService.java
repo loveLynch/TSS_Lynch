@@ -169,7 +169,7 @@ public class StudentService {
         response.put("size", topics.size());
         if (topics.size() > 0)
             response.put("list", topics);
-        else response.put("list", "{[]}");
+        else response.put("list", "[]");
         return response;
     }
 

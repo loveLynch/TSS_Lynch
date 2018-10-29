@@ -5,6 +5,7 @@ import com.silver.tss.common.Response;
 import com.silver.tss.domain.Student;
 import com.silver.tss.domain.User;
 import com.silver.tss.repository.StudentRepo;
+import com.silver.tss.repository.TopicRepo;
 import com.silver.tss.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,8 @@ public class UserService {
     private UserRepo userRepo;
     @Autowired
     private StudentRepo studentRepo;
+    @Autowired
+    private TopicRepo topicRepo;
 
     /**
      * 修改学生登陆密码
@@ -32,13 +35,28 @@ public class UserService {
      */
     public JSONObject updateStudentPwd(String studentId, String studentPwd) {
         int flag = 0;
+        String classId = null;
+        String studentName = null;
+        String topicName = null;
+        String topicId = null;
         try {
             flag = userRepo.updateStudentPwd(studentId, studentPwd);
             userRepo.updateModifyTime(new Date(), studentId);
+            classId = studentRepo.findClassByStudentId(studentId);
+            studentName = studentRepo.findNameByStudentId(studentId);
+            topicId = studentRepo.getstudentTopic(studentId);
+            topicName = topicRepo.getTopicName(topicId);
         } catch (Exception e) {
 
         }
-        return flag > 0 ? Response.response(200) : Response.response(400);
+        JSONObject response = new JSONObject();
+        response.put("code", 200);
+        response.put("classId", classId);
+        response.put("studentId", studentId);
+        response.put("studentName", studentName);
+        response.put("topicName", topicName);
+        response.put("topicId", topicId);
+        return flag > 0 ? response : Response.response(400);
     }
 
     /**
@@ -70,11 +88,14 @@ public class UserService {
         List<User> list = null;
         String classId = null;
         String studentName = null;
+        String topicName = null;
+        String topicId = null;
         try {
             list = userRepo.getStuNameandPwd(studentId, studentPwd);
             classId = studentRepo.findClassByStudentId(studentId);
             studentName = studentRepo.findNameByStudentId(studentId);
-
+            topicId = studentRepo.getstudentTopic(studentId);
+            topicName = topicRepo.getTopicName(topicId);
 
         } catch (Exception e) {
 
@@ -84,6 +105,8 @@ public class UserService {
         response.put("classId", classId);
         response.put("studentId", studentId);
         response.put("studentName", studentName);
+        response.put("topicName", topicName);
+        response.put("topicId", topicId);
         if (list.size() > 0)
             return response;
         else return Response.response(400);

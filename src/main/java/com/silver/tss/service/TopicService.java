@@ -66,6 +66,7 @@ public class TopicService {
         else return Response.response(400);
         int flag = 0;
         try {
+
             String topicName = topicRepo.getTopicName(topicId);
             topicRepo.incrementTopic(topicId);
             studentRepo.updateModifyTime(new Date(), studentId);
@@ -123,13 +124,21 @@ public class TopicService {
      * @param topicid
      * @return
      */
-    public boolean isExceedMaxTopic(String topicid) {
-        String real = topicRepo.getRealTopic(topicid);
+    public boolean isExceedMaxTopic(String studentId, String topicid) {
+        String classId = studentRepo.findClassByStudentId(studentId);
+        String real1 = topicRepo.getRealTopic1(topicid);
+        String real2 = topicRepo.getRealTopic2(topicid);
+        String real3 = topicRepo.getRealTopic3(topicid);
         String max = topicRepo.getMAXTopic(topicid);
-        if (Integer.parseInt(real) > Integer.parseInt(max))
+        if (classId.equals("1") && Integer.parseInt(real1) >= Integer.parseInt(max))
             return true;
-        else
+        else if (classId.equals("2") && Integer.parseInt(real2) >= Integer.parseInt(max))
+            return true;
+        else if (classId.equals("3") && Integer.parseInt(real3) >= Integer.parseInt(max))
+            return true;
+        else {
             return false;
+        }
     }
 
     /**
@@ -214,7 +223,6 @@ public class TopicService {
         } catch (Exception e) {
         }
         return flag > 0 ? Response.response(200) : Response.response(400);
-
-
     }
+
 }
