@@ -10,3 +10,5 @@
 
 > 选课时间控制接口，见src/main/java/com/silver/tss/web/StatusController
 # TSS_Lynch
+
+springboot+mybatis见/Yuchen-Chiang/TSS
