@@ -7,6 +7,9 @@ import com.silver.tss.domain.User;
 import com.silver.tss.repository.StudentRepo;
 import com.silver.tss.repository.TopicRepo;
 import com.silver.tss.repository.UserRepo;
+import com.silver.tss.web.StudentController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +22,8 @@ import java.util.List;
  **/
 @Service
 public class UserService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(StudentController.class);
+
     @Autowired
     private UserRepo userRepo;
     @Autowired
@@ -107,9 +112,13 @@ public class UserService {
         response.put("studentName", studentName);
         response.put("topicName", topicName);
         response.put("topicId", topicId);
-        if (list.size() > 0)
+        if (list.size() > 0) {
+            LOGGER.info("studentId={} with studentPwd={} login tss success", studentId, studentPwd);
             return response;
-        else return Response.response(400);
+        } else {
+            LOGGER.info("studentId={} with studentPwd={} login tss fail", studentId, studentPwd);
+            return Response.response(400);
+        }
 
 
     }

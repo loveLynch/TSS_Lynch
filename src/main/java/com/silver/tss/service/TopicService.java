@@ -121,15 +121,16 @@ public class TopicService {
     /**
      * 是否超过最大值
      *
-     * @param topicid
+     * @param studentId
+     * @param topicId
      * @return
      */
-    public boolean isExceedMaxTopic(String studentId, String topicid) {
+    public boolean isExceedMaxTopic(String studentId, String topicId) {
         String classId = studentRepo.findClassByStudentId(studentId);
-        String real1 = topicRepo.getRealTopic1(topicid);
-        String real2 = topicRepo.getRealTopic2(topicid);
-        String real3 = topicRepo.getRealTopic3(topicid);
-        String max = topicRepo.getMAXTopic(topicid);
+        String real1 = topicRepo.getRealTopic1(topicId);
+        String real2 = topicRepo.getRealTopic2(topicId);
+        String real3 = topicRepo.getRealTopic3(topicId);
+        String max = topicRepo.getMAXTopic(topicId);
         if (classId.equals("1") && Integer.parseInt(real1) >= Integer.parseInt(max))
             return true;
         else if (classId.equals("2") && Integer.parseInt(real2) >= Integer.parseInt(max))

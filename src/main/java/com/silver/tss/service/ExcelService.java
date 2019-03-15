@@ -3,10 +3,7 @@ package com.silver.tss.service;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyun.oss.OSSClient;
 import com.silver.tss.common.Response;
-import com.silver.tss.domain.Student;
-import com.silver.tss.domain.Teacher;
-import com.silver.tss.domain.Topic;
-import com.silver.tss.domain.User;
+import com.silver.tss.domain.*;
 import com.silver.tss.repository.TopicRepo;
 import com.silver.tss.utils.AliyunOSSConfig;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -46,7 +43,8 @@ public class ExcelService {
     private TopicService topicService;
     @Autowired
     private TopicRepo topicRepo;
-
+    @Autowired
+    private TopicTimeService topicTimeService;
 
     /**
      * 导入学生数据
@@ -56,6 +54,7 @@ public class ExcelService {
      * @return
      */
     public JSONObject importStudentsExcel(String fileName, MultipartFile file) {
+        topicTimeService.initTime(new Date(), new Date());
 
 //        String classId = fileName.substring(0, fileName.lastIndexOf("."));
         Workbook wb = getReadWorkBook(fileName, file);

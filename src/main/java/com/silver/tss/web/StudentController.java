@@ -35,7 +35,6 @@ public class StudentController {
     @ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public JSONObject login(@RequestParam(value = "studentId") String studentId, @RequestParam(value = "studentPwd") String studentPwd) {
-        LOGGER.info("studentId={} with studentPwd={} login tss", studentId, studentPwd);
         JSONObject response = userService.isUserExist(studentId, studentPwd);
         return "200".equals(response.getString("code")) ?
                 userService.isUserChangePwd(studentId) ? response : Response.response(300)

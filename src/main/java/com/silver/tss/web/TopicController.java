@@ -3,13 +3,17 @@ package com.silver.tss.web;
 import com.alibaba.fastjson.JSONObject;
 import com.silver.tss.common.Response;
 import com.silver.tss.domain.Topic;
-import com.silver.tss.service.StatusService;
 import com.silver.tss.service.StudentService;
 import com.silver.tss.service.TopicService;
+import com.silver.tss.service.TopicTimeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * 课程设计题目管理接口
@@ -25,7 +29,19 @@ public class TopicController {
     @Autowired
     private StudentService studentService;
     @Autowired
-    private StatusService statusService;
+    private TopicTimeService topicTimeService;
+
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+    private Date nowtime = null;
+
+    {
+        try {
+            nowtime = df.parse(df.format(new Date()));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
     private static final Logger LOGGER = LoggerFactory.getLogger(TopicController.class);
 
     /**
@@ -41,7 +57,7 @@ public class TopicController {
     @ResponseBody
     @RequestMapping(value = "/select/topic", method = RequestMethod.GET)
     public JSONObject selectTopic(String studentId, String topicId) {
-        if (statusService.isStatus0() || statusService.isStatus2()) {
+        if (!topicTimeService.belongCalendar(nowtime)) {
             LOGGER.info("studentId={} select topicId={} failed, cause = 403", studentId, topicId);
             return Response.response(403);
         } else if (studentService.isStudentUserHasTopic(studentId)) {
@@ -73,7 +89,7 @@ public class TopicController {
     @ResponseBody
     @RequestMapping(value = "/drop/topic", method = RequestMethod.GET)
     public JSONObject dropTopic(String studentId, String topicId) {
-        if (statusService.isStatus0() || statusService.isStatus2()) {
+        if (!topicTimeService.belongCalendar(nowtime)) {
             LOGGER.info("studentId={} drop topicId={} failed, cause = 402", studentId, topicId);
             return Response.response(402);
         } else if (!studentService.isStudentUserHasTopic(studentId)) {
